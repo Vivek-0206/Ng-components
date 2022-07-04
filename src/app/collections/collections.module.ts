@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { BiographyComponent } from './biography/biography.component';
 import { COmpaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PartnersComponent } from './partners/partners.component';
     BiographyComponent,
     COmpaniesComponent,
     PartnersComponent,
+    TabsComponent,
   ],
   imports: [CommonModule, CollectionsRoutingModule, SharedModule],
   exports: [],
