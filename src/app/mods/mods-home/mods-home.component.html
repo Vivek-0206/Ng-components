@@ -1,3 +1,10 @@
 <app-divider>Modal Component</app-divider>
 <button class="ui button" (click)="toggleModal()">Open Model</button>
-<app-modal (close)="toggleModal()" *ngIf="modalOpen"></app-modal>
+<app-modal (close)="toggleModal()" *ngIf="modalOpen">
+  <ng-container modalTitle>Reusable Modal Title</ng-container>
+  <p>Converted into reusable modal</p>
+  <ng-container modalFooter>
+    <button class="ui button" (click)="toggleModal()">Close</button>
+    <button class="ui button" (click)="toggleModal()">Ok</button>
+  </ng-container>
+</app-modal>
